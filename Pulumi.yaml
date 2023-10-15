@@ -1,0 +1,11 @@
+name: aws_s3
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A minimal AWS Python Pulumi program
+
+dependencies:
+  python: ">=3.6, <4.0"
+  s3: "./module/s3" # Path to the s3 module directory
+  vpc: "./module/vpc"
